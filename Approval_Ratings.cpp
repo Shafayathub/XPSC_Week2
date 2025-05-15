@@ -11,7 +11,7 @@ int main()
     while (n--)
     {
         int sum = 0, avg = 1, goldcnt = 0;
-         priority_queue<int, vector<int>, greater<int>> pq;
+        priority_queue<int, vector<int>, greater<int>> pq;
         for (int i = 0; i < 5; i++)
         {
             int rating;
@@ -24,7 +24,7 @@ int main()
         {
             for (int i = 0; i < 5 && avg < 7; i++)
             {
-                sum += (10-pq.top());
+                sum += (10 - pq.top());
                 pq.pop();
                 avg = sum / 5;
                 goldcnt += 1;
